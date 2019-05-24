@@ -1,4 +1,4 @@
-clear all;clc;
+% clear all;clc;
 
 addpath('.\utils');
 addpath('.\graph');
@@ -12,9 +12,9 @@ param.lambda = 0; % without using training labels
 energy_ratio = 0.999;
 
 
-fprintf('loading data....\n');
-train_data = load('.\data\train_data');
-test_data = load('.\data\test_data');
+% fprintf('loading data....\n');
+% train_data = load('.\data\train_data');
+% test_data = load('.\data\test_data');
                 
 X_c_s = train_data.train_features'; 
 % X_c_u can be sampled test_features
