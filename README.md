@@ -5,7 +5,7 @@ Domain Adaptation for Image Classification
 |-|-|-|-|
 | TCA | 69.02 | 61.42 | 96.67 |
 | GFK ||||
-| CORAL | 74.87{c=4} | 74.87{c=4} | 99.82{c=4} |
+| CORAL | 74.87{c=4} | 66.49{c=4} | 99.82{c=4} |
 | KMM ||||
 | DIP ||||
 
