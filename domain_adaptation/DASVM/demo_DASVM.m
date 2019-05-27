@@ -14,9 +14,9 @@ param.max_iter    = 100;
 param.max_unl_num = 5;
 
 
-% fprintf('loading data....\n');
-% train_data = load('.\data\train_data');
-% test_data = load('.\data\test_data');
+fprintf('loading data....\n');
+train_data = load('.\data\train_data');
+test_data = load('.\data\test_data');
 
 pos_features = train_data.train_features(:,train_data.train_labels==1);
 neg_features = train_data.train_features(:,train_data.train_labels==-1);

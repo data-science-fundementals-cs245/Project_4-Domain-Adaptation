@@ -32,12 +32,16 @@ Clone from Newly's Repository: <https://github.com/ustcnewly/domain_adaptation>
 8. **TCA**: Domain adaptation via transfer component analysis **(deprecated)**
 9. **RDALR**: Robust visual domain adaptation with low-rank reconstruction
 
-|  DA   | A->R | C->R | P->R |
-| :---: | :--: | :--: | :--: |
-| DASVM |      |      |      |
-|  DIP  |      |      |      |
-|  SGF  |      |      |      |
-|  STM  |      |      |      |
-| RDALR |      |      |      |
+|  DA   | A->R  | C->R  | P->R  |
+| :---: | :---: | :---: | :---: |
+| DASVM |       |       |       |
+|  DIP  | 74.10 | 62.07 | 69.81 |
+|  SGF  | 72.56 | 61.89 | 69.14 |
+|  STM  |       |       |       |
+| RDALR |       |       |       |
 
-### 
+- DASVM 不能用，因为牛力的demo里面是针对二分类的代码
+
+- RDALR 不能用，因为牛力的demo里面写得太不清楚，不知如何调用
+
+- STM 不知是跑得太慢还是不能直接使用，正在处理中

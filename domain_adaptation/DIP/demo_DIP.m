@@ -1,4 +1,4 @@
-clear all;clc;
+% clear all;clc;
 
 addpath('.\utils');
 addpath('.\sg_min2.4.3');
@@ -9,9 +9,9 @@ param.lambda = 0;
 param.dim = 200;
 param.C = 1;
 
-fprintf('loading data....\n');
-train_data = load('.\data\train_data');
-test_data = load('.\data\test_data');
+% fprintf('loading data....\n');
+% train_data = load('.\data\train_data');
+% test_data = load('.\data\test_data');
 
 
 Xs = train_data.train_features';
@@ -28,7 +28,9 @@ W = trainDIP_CG(train_data.train_labels, Xs, Xu, sigma, param.lambda, param.dim)
 
 train_feature = Xs * W;
 test_feature = Xu * W;
-clear W;
+% clear W;
+save('train_feature.mat', 'train_feature')
+save('test_feature.mat', 'test_feature')
 
 kparam = struct();
 kparam.kernel_type = 'gaussian';

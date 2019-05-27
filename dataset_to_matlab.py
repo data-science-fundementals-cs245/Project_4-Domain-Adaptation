@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 
-DATA_DIR = "./Data/"
+DATA_DIR = "./tmpData/"
 
 def make_dataset_mat(file_dir):
     save_name = file_dir.split(".")[0]
@@ -18,3 +18,4 @@ def make_dataset_mat(file_dir):
 
 for file_dir in os.listdir(DATA_DIR):
     make_dataset_mat(file_dir)
+

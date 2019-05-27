@@ -1,17 +1,17 @@
-clear all;clc;
+% clear all;clc;
 
 addpath('.\utils');
 addpath('.\primal_svm');
 addpath('.\func');
-addpath('C:\Program Files\Mosek\6\toolbox\r2009b');
+addpath('C:\Program Files\Mosek\6\toolbox\r2018a');
 
 % parameter
 param.C = 1;
 param.lambda = 1;
 
-fprintf('loading data....\n');
-train_data = load('.\data\train_data');
-test_data = load('.\data\test_data');
+% fprintf('loading data....\n');
+% train_data = load('.\data\train_data');
+% test_data = load('.\data\test_data');
 
 global X Xte;
 X = train_data.train_features';
