@@ -3,11 +3,9 @@ Domain Adaptation for Image Classification
 
 | DA | A->R | C->R | P->R |
 |-|-|-|-|
-| TCA | 69.02 | 61.42 | 96.67 |
-| GFK ||||
-| CORAL | 74.87{c=4} | 66.49{c=4} | 99.82{c=4} |
-| KMM ||||
-| DIP ||||
+| TCA | 69.02 | 61.42 | 67.51 |
+| CORAL | 74.87 | 66.49 | 72.69 |
+
 
 ### Hongbin Chen's Results
 |            | A->R              | C->R               | P->R               |
